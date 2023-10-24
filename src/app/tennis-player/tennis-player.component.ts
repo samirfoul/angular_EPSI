@@ -13,6 +13,7 @@ export class TennisPlayerComponent implements OnInit {
   // proprieté ( les attributtes )
   public player = new ModelTennisPlayer;
   public players: ModelTennisPlayer[] = [];
+  // hello
 
   constructor() { }
 
