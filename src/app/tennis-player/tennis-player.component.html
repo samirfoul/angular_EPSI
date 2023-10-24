@@ -1,0 +1,24 @@
+<p>tennis-player works!</p>
+<p>cool !</p>
+
+<p>salut : {{player.Firstname}} {{player.LastName}}, tu as le classement n : {{ player.rank}}</p>
+
+
+
+<input [(ngModel)]="player.Firstname" type="text" placeholder="first name">
+<input [(ngModel)]="player.LastName" type="text" placeholder="Last name">
+<input [(ngModel)]="player.rank" type="text" placeholder="Rank">
+<br>
+<br>
+<br>
+<button (click)="onClick()">ajoute player</button>
+
+<ul>
+  <li *ngFor="let items of players">
+    <p>first name : {{ items.Firstname}}</p>
+    <p>laste name : {{ items.LastName}}</p>
+    <p>rank : {{ items.rank}}</p>
+    <p>l'id : {{ items.id}}</p>
+
+  </li>
+</ul>
